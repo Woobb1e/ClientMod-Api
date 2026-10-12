@@ -1,0 +1,123 @@
+"Games"
+{
+	"cstrike"
+	{
+		"Addresses"
+		{
+			"CBotManager_IsLineBlockedBySmoke"
+			{
+				"windows"
+				{
+					"signature" "CBotManager_IsLineBlockedBySmoke_Sig"
+				}
+				"linux"
+				{
+					"signature" "CBotManager_IsLineBlockedBySmoke_Sig"
+				}
+			}
+			"CBasePlayer_AdjustPlayerTimeBase"
+			{
+				"windows"
+				{
+					"signature" "CBasePlayer_AdjustPlayerTimeBase_Sig"
+				}
+				"linux"
+				{
+					"signature" "CBasePlayer_AdjustPlayerTimeBase_Sig"
+				}
+			}
+			
+			"GlobalUserMessages"
+			{
+				"windows"
+				{
+					"signature" "GlobalUserMessages_Sig"
+				}
+				"linux"
+				{
+					"signature" "GlobalUserMessages_Sig"
+				}
+			}
+			"CUserMessages_Register"
+			{
+				"windows"
+				{
+					"signature" "CUserMessages_Register_Sig"
+				}
+				"linux"
+				{
+					"signature" "CUserMessages_Register_Sig"
+				}
+			}
+			"CUserMessages_LookupUserMessage"
+			{
+				"windows"
+				{
+					"signature" "CUserMessages_LookupUserMessage_Sig"
+				}
+				"linux"
+				{
+					"signature" "CUserMessages_LookupUserMessage_Sig"
+				}
+			}
+		}
+		"Offsets"
+		{
+			"CBotManager_IsLineBlockedBySmoke_Offset"
+			{
+				"windows"		"2"
+				"linux"			"0"
+			}
+			"CBasePlayer_AdjustPlayerTimeBase_Offset"
+			{
+				"windows"		"2"
+				"linux"			"0"
+			}
+			"GlobalUserMessages_Offset"
+			{
+				"windows"		"2"
+				"linux"			"0"
+			}
+			"IsWindows"
+			{
+				"windows"		"1"
+				"linux"			"0"
+			}
+		}
+		
+		"Signatures"
+		{
+			"CBotManager_IsLineBlockedBySmoke_Sig"
+			{
+				"library"		"server"
+				"windows"		"\xD8\x1D\x2A\x2A\x2A\x2A\xDF\xE0\xF6\xC4\x41\x75\x04\xB3\x01\xEB\x02\x32\xDB\x8B\x0D"
+				"linux"			"@_ZN11CBotManager20IsLineBlockedBySmokeERK6VectorS2_f"
+			}
+			"CBasePlayer_AdjustPlayerTimeBase_Sig"
+			{
+				"library"		"server"
+				"windows"		"\xD9\x05\x2A\x2A\x2A\x2A\xD8\x76\x1C\xD8\x05\x2A\x2A\x2A\x2A\xE8"
+				"linux"			"@_ZN11CBasePlayer20AdjustPlayerTimeBaseEi"
+			}
+			
+			"GlobalUserMessages_Sig"
+			{
+				"library"		"server"
+				"windows"		"\x8B\x0D\x2A\x2A\x2A\x2A\xE9\x65\x58\x15\x00"
+				"linux"			"@usermessages"
+			}
+			"CUserMessages_Register_Sig"
+			{
+				"library"		"server"
+				"windows"		"\x83\xEC\x08\x53\x56\x8B\x74\x24\x14\x57"
+				"linux"			"@_ZN13CUserMessages8RegisterEPKci"
+			}
+			"CUserMessages_LookupUserMessage_Sig"
+			{
+				"library"		"server"
+				"windows"		"\x8B\x44\x24\x04\x83\xEC\x08\x85\xC0\x74\x11"
+				"linux"			"@_ZN13CUserMessages17LookupUserMessageEPKc"
+			}
+		}
+	}
+}
