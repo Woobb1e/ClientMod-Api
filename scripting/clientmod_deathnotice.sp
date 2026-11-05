@@ -398,7 +398,7 @@ int GetPlayerBlind(int client, int min_alpha = 0)
 			else
 			{
 				flAlphaPercentage = flFlashTimeLeft / certainBlindnessTimeThresh;
-				flAlphaPercentage *= flAlphaPercentage;
+				flAlphaPercentage = flAlphaPercentage * flAlphaPercentage;
 			}
 			float flAlpha = flAlphaPercentage *= m_flFlashMaxAlpha;
 			flAlpha = (flAlpha < 0.0) ? 0.0 : (flAlpha > m_flFlashMaxAlpha) ? m_flFlashMaxAlpha : flAlpha;
